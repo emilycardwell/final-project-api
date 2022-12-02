@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from chords_prog_proj.ml_logic.registry import load_model
+from chords_prog_proj.api.load_model import load_model_local
 
 import random
 import numpy as np
@@ -24,7 +24,7 @@ def predict(chords: str):
     else:
         return {'The next chord is': 'G'}
 
-model = load_model('v1')
+model = load_model_local('v1')
 
 @app.get("/predict")
 def predict(input_chords: str,  #'G,B,F'

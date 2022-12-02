@@ -6,19 +6,19 @@ ipdb
 numpy
 pandas
 nbresult
-scikit-learn
+# scikit-learn
 yapf
-matplotlib
-seaborn
+protobuf==3.20
+# matplotlib
+# seaborn
 
 
 # prevent bq 3+ db-dtypes package error when running training from bq
-google-cloud-bigquery<3.0.0
+# google-cloud-bigquery<3.0.0
 google-cloud-storage
 pyarrow
 
-mlflow~=1.26.1
-tensorflow-macos==2.10.0 ; sys_platform == "darwin"
+# mlflow~=1.26.1
 
 python-dotenv
 prefect<2
