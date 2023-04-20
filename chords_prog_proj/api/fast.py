@@ -17,7 +17,7 @@ app.add_middleware(
 )
 
 @app.get("/predict_baseline")
-def predict(chords: str):
+def predict_baseline(chords: str):
     i = random.randint(0,1)
     if i == 0:
         return {'The next chord is': 'C'}

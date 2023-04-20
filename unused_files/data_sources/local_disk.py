@@ -1,11 +1,9 @@
 
 import pandas as pd
-
 import os
-
 from colorama import Fore, Style
-
 from chords_prog_proj.ml_logic.params import LOCAL_DATA_PATH
+
 
 def get_pandas_chunk(path: str,
                      index: int,
